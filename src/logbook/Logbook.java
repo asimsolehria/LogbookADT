@@ -80,6 +80,25 @@ public class Logbook {
         }
     }
     
+    void displayCalendar()
+    {
+        System.out.println("--------"+this.logMonth+"/"+this.logYear+"--------");
+        
+        System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
+        
+        for (int i = 0; i < dayOfWeek(1); i++)
+            System.out.print("\t");
+        
+        
+        for (int day = 1; day <= this.daysInMonth(); day++)
+        {
+            System.out.print(day+" ("+this.getEntry(day)+")"+"\t");
+            if(day%7==7-dayOfWeek(1))
+                System.out.println("\n");
+        }
+        
+    }
+    
 //--------If there were no built in method I would implement it as follows------
     
     public boolean isLeapYear(int year)

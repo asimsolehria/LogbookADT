@@ -15,8 +15,6 @@ public class Coffee {
         
           Logbook coffee= new Logbook(12, 2000);
           
-          System.out.println(coffee.day(2000, 12, 8));
-          
 //-------------------------Putting and getting Entry Test-----------------------
           
 //        coffee.putEntry(2, 100);
@@ -98,8 +96,11 @@ public class Coffee {
 //
 //        System.out.println(leap.isLeapYear(leap.getLogYear()));
 //        System.out.println(leap.isLeapYear(notLeap.getLogYear()));
+
+//---------------------------displayCalendar------------------------------------
+        coffee.displayCalendar();
+        System.out.println(coffee.dayOfWeek(1));
     }
     
-    
-    
+        
 }

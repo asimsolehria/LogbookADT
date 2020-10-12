@@ -1,6 +1,5 @@
 
 package logbook;
-
 /**
  *
  * @author asim

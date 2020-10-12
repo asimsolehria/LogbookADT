@@ -82,7 +82,7 @@ public class Logbook {
     
     void displayCalendar()
     {
-        System.out.println("--------"+this.logMonth+"/"+this.logYear+"--------");
+        System.out.println("\t\t--------"+this.logMonth+"/"+this.logYear+"--------\n");
         
         System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
         

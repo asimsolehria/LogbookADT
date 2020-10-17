@@ -33,6 +33,16 @@ public class Logbook {
         entry[day-1]=value;
     }
     
+    public void putFridayEntry(int value)
+    {
+                int day;
+        for ( day = 0; day< this.daysInMonth(); day++) 
+        {
+            if(this.dayOfWeek(day)%4==0)
+                entry[day]=value;
+        }
+        
+    }
     public int getEntry(int day)
     {
         return entry[day-1];

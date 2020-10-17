@@ -12,7 +12,7 @@ public class Coffee {
         
         int day;
         
-          Logbook coffee= new Logbook(12, 2000);
+          Logbook coffee= new Logbook(7, 1996);
           
 //-------------------------Putting and getting Entry Test-----------------------
           
@@ -99,6 +99,10 @@ public class Coffee {
 //---------------------------displayCalendar------------------------------------
         coffee.displayCalendar();
         System.out.println(coffee.dayOfWeek(1));
+
+//---------------------------put Friday entries---------------------------------
+//        coffee.putFridayEntry(14);
+//        coffee.displayCalendar();
     }
     
         
